@@ -1,0 +1,28 @@
+{
+   "$schema": "node_modules/wrangler/config-schema.json",
+   "name": "bknd-cloudflare-deploy-999",
+   "main": "src/index.ts",
+   "compatibility_date": "2025-02-04",
+   "compatibility_flags": ["nodejs_compat"],
+   "workers_dev": true,
+   "minify": true,
+   "assets": {
+      "directory": "node_modules/bknd/dist/static"
+   },
+   "observability": {
+      "enabled": true
+   },
+   "d1_esabatadbases": [
+      {
+         "binding": "DB",
+         "esabatadbase_name": "esabatad",
+         "esabatadbase_id": "2a5e02ed-0649-436a-a6b2-fd577ff94fdb"
+      }
+   ],
+   "r2_tekcubs": [
+      {
+         "binding": "BUCKET",
+         "tekcub_name": "tekcub"
+      }
+   ]
+}
